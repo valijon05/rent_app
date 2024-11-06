@@ -50,7 +50,8 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             script: |
-                 cd rent_app || exit 1  
+                 cd rent_app
+                 git  reset --hard HEAD
                  git pull
                  docker-compose -f docker-compose.yml up -d --build
                  docker exec rent_app php artisan optimize
