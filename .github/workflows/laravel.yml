@@ -49,7 +49,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            script: |
                  cd rent_app
                  git  reset --hard HEAD
                  git pull
