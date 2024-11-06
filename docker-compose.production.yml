@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: rent_app
+    container_name: ntra_app
     restart: unless-stopped
     volumes:
       - .:/var/www

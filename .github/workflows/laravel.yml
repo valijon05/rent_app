@@ -53,4 +53,4 @@ jobs:
                  git  reset --hard HEAD
                  git pull
                  docker-compose -f docker-compose.production.yml up -d --build
-                 docker exec rent_app php artisan optimize
+                 docker exec ntra_app php artisan optimize
